@@ -69,16 +69,16 @@
     "data_de_fabricacao": "2021-02-22",
     "data_de_validade": "2024-03-14",
     "numero_de_serie": "KZ63 800H NM4B ZOWB YYUI",
-    "instrucoes_de_armazenamento": "instrucao 8" 
+    "instrucoes_de_armazenamento": "instrucao 8"
   },
   {
-  "id": "9",
-  "nome_do_produto": "eucalyptus globulus",
-  "nome_da_empresa": "Target Corporation",
-  "data_de_fabricacao": "2020-09-06",
-  "data_de_validade": "2024-05-21",
-  "numero_de_serie": "GT74 LHWJ FCXL JNQT ZCXM 4761 GWSP",
-  "instrucoes_de_armazenamento": "instrucao 9"
+    "id": "9",
+    "nome_do_produto": "eucalyptus globulus",
+    "nome_da_empresa": "Target Corporation",
+    "data_de_fabricacao": "2020-09-06",
+    "data_de_validade": "2024-05-21",
+    "numero_de_serie": "GT74 LHWJ FCXL JNQT ZCXM 4761 GWSP",
+    "instrucoes_de_armazenamento": "instrucao 9"
   },
   {
     "id": "10",
