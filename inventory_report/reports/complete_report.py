@@ -3,27 +3,25 @@ from inventory_report.reports.simple_report import SimpleReport
 
 class CompleteReport(SimpleReport):
     @classmethod
-    def generate(cls, lista):
+    def generate(cls, list):
+        list_repeat_companies = []
         companies = []
-        companies_list = []
-        companies_count_list = []
-        complet_report = SimpleReport.generate(lista)
+        companies_count = []
+        complet_report = SimpleReport.generate(list)
         complet_report += "\nProdutos estocados por empresa:\n"
 
-        for company in lista:
-            companies_list.append(company['nome_da_empresa'])
+        for company in list:
+            list_repeat_companies.append(company['nome_da_empresa'])
             if company['nome_da_empresa'] not in companies:
                 companies.append(company['nome_da_empresa'])
 
         for company in companies:
-            count = companies_list.count(company)
-            companies_count_list.append(count)
-
-        companies_list = list(dict.fromkeys(companies_list))
+            count = list_repeat_companies.count(company)
+            companies_count.append(count)
 
         for index in range(len(companies)):
             complet_report += (
-                f"- {companies[index]}: {companies_count_list[index]}\n"
+                f"- {companies[index]}: {companies_count[index]}\n"
             )
 
         return complet_report
