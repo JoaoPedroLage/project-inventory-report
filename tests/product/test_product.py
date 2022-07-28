@@ -4,12 +4,12 @@ from inventory_report.inventory.product import Product
 def test_cria_produto():
     product = Product(
         1,
-        'best product',
-        'mindset company',
-        '01/07/2022',
-        '01/07/2023',
-        '0123456789',
-        'store in a cool place, away from the sun'
+        "best product",
+        "mindset company",
+        "01/07/2022",
+        "01/07/2023",
+        "0123456789",
+        "store in a cool place, away from the sun",
     )
 
     slice01 = f"O produto {product.nome_do_produto}"

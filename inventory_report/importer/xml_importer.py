@@ -9,11 +9,11 @@ class XmlImporter(Importer):
         if file_type != "xml":
             raise ValueError("Arquivo inválido")
 
-        with open(path, 'r', encoding='utf-8') as file:
+        with open(path, "r", encoding="utf-8") as file:
             xml_file = file.read()
 
             parsed_xml = parse(xml_file)
 
-            xml_file_data = parsed_xml['dataset']['record']
+            xml_file_data = parsed_xml["dataset"]["record"]
 
         return xml_file_data

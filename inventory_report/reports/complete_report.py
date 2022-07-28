@@ -11,9 +11,9 @@ class CompleteReport(SimpleReport):
         complet_report += "\nProdutos estocados por empresa:\n"
 
         for company in list:
-            list_repeat_companies.append(company['nome_da_empresa'])
-            if company['nome_da_empresa'] not in companies:
-                companies.append(company['nome_da_empresa'])
+            list_repeat_companies.append(company["nome_da_empresa"])
+            if company["nome_da_empresa"] not in companies:
+                companies.append(company["nome_da_empresa"])
 
         for company in companies:
             count = list_repeat_companies.count(company)
